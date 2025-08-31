@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
+import logging  # noqa: F401
 import os
 from pathlib import Path
 
@@ -132,3 +133,35 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# Logging configuration basic (for now)
+# It shows logging both in the console and in a file
+# Logs timestamp, level, module name and the log message
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "standard": {
+            "format": "[{asctime}] {levelname} in {module}: {message}",
+            "datefmt": "%Y-%m-%d %H:%M:%S",  # Timestamp format
+            "style": "{",  # Using "new style" for formatting
+        },
+    },
+    # Write logs to the console
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+            "formatter": "standard",
+        },
+        # Write logs to a file
+        "file": {
+            "class": "logging.FileHandler",
+            "formatter": "standard",
+            "filename": os.path.join(BASE_DIR, "logs", "django.log"),
+        },
+    },
+    "root": {
+        "handlers": ["console", "file"],
+        "level": "DEBUG",  # Logging all levels
+    },
+}
