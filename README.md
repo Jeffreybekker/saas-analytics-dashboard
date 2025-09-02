@@ -54,9 +54,9 @@ Create a .env-file in the root of the project.
 **Example:**  
 Wat staat er in de .env-file?
 
-SECRET_KEY=your-secret-key
-DEBUG=True
-ALLOWED_HOSTS=127.0.0.1,localhost
+SECRET_KEY=your-secret-key  
+DEBUG=True  
+ALLOWED_HOSTS=127.0.0.1,localhost  
 
 POSTGRES_DB= saas_analytics
 POSTGRES_USER= postgres
