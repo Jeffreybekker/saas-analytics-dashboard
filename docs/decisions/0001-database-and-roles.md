@@ -13,9 +13,10 @@ The system must be secure, scalable, and flexible enough to handle many events o
   - **End user:** Generates events, linked to their client  
 
 ## Alternatives
-- **SQLite:** Too simple, not production-ready  
-- **MySQL:** Weaker JSON support and fewer advanced features  
-
+- **SQLite:** Easy to set up and fine for prototypes. Not good for production, because it has problems with many users at once and lacks advanced features.  
+- **MySQL:** Stable and popular, but JSON support is weaker than PostgreSQL. It also has fewer advanced analytics features and indexing options.  
+- **Other databases:** Good for flexible data, but weaker for relational queries. PostgreSQL combines both: strong relational features and JSON support in one system.  
+ 
 ## Outcome
 - Data isolation per client will be handled in Django queries  
 - JSON fields allow flexible storage of event metadata  
