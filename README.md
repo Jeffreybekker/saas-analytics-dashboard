@@ -54,13 +54,13 @@ Create a .env-file in the root of the project.
 **Example:**  
 Wat staat er in de .env-file?
 
-**SECRET_KEY**=  
-**DEBUG**=  
-**ALLOWED_HOSTS**=  
+SECRET_KEY=your-secret-key
+DEBUG=True
+ALLOWED_HOSTS=127.0.0.1,localhost
 
-**DB_NAME**=  
-**DB_USER**=  
-**DB_PASSWORD**=  
-**DB_HOST**=  
-**DB_PORT**=  
+POSTGRES_DB=  
+POSTGRES_USER=  
+POSTGRES_PASSWORD=  
+POSTGRES_HOST=  
+POSTGRES_PORT=  
 
