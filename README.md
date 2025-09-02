@@ -43,7 +43,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-**Extra explanation**
+**Extra explanation:**
 - Pipenv creates automatically a Pipfile
 - Pipfile.lock makes sure everyone uses the same version
 - No need anymore for requirements.txt
