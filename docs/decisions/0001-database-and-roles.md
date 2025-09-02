@@ -21,6 +21,3 @@ The system must be secure, scalable, and flexible enough to handle many events o
 - Data isolation per client will be handled in Django queries  
 - JSON fields allow flexible storage of event metadata  
 - PostgreSQL gives better scalability for analytics queries  
-
-## Notes
-- In production, database-level security and audit logging may be added
