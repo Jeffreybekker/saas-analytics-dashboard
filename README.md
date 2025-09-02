@@ -62,7 +62,6 @@ CREATE DATABASE saas_analytics;
 Create a .env-file in the root of the project.  
 
 **Example:**  
-Wat staat er in de .env-file?
 
 SECRET_KEY=your-secret-key  
 DEBUG=True  
