@@ -48,6 +48,16 @@ python manage.py runserver
 - Pipfile.lock makes sure everyone uses the same version
 - No need anymore for requirements.txt
 
+**Database Setup**
+Make sure you have PostgreSQL running locally.
+
+1. Create a new database:
+```
+CREATE DATABASE saas_analytics;
+```
+2. Use the default PostgreSQL user (postgres) or your own.  
+3. Check that PostgreSQL is running on the default port 5432 (or change it in your .env file).  
+
 ## Configuration
 Create a .env-file in the root of the project.  
 
