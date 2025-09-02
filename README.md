@@ -65,8 +65,8 @@ SECRET_KEY=your-secret-key
 DEBUG=True  
 ALLOWED_HOSTS=localhost,127.0.0.1  
 
-POSTGRES_DB= saas_analytics
-POSTGRES_USER= postgres
+POSTGRES_DB=saas_analytics
+POSTGRES_USER=postgres
 POSTGRES_PASSWORD=your-password
 POSTGRES_HOST=localhost
 POSTGRES_PORT=5432
