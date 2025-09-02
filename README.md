@@ -43,5 +43,10 @@ python manage.py migrate
 python manage.py runserver
 ```
 
+**Extra explanation**
+- Pipenv creates automatically a Pipfile
+- Pipfile.lock makes sure everyone uses the same version
+- No need anymore for requirements.txt
+
 ## Configuration
 **Create a .env-file in the root of the project**  
