@@ -48,7 +48,7 @@ python manage.py runserver
 - Pipfile.lock makes sure everyone uses the same version
 - No need anymore for requirements.txt
 
-**Database Setup**
+## Database Setup
 Make sure you have PostgreSQL running locally.
 
 1. Create a new database:
