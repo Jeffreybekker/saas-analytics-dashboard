@@ -1,17 +1,17 @@
 # SaaS Analytics Dashboard
 
-
 ## Description
-
+This project is a SaaS Analytics Dashboard built with Django and PostgreSQL.
+It is designed to collect, store, and analyze event data for multiple clients in a secure way.  
+At this moment the project is still in development.
 
 ## Features
 
-- Basic Logging in console and file
-- PostgreSQL database connection
-- Multi-tenant user roles (Admin, Client, End User)
-- Linting and formatting with Ruff
-- CI + pre-commit hooks
-
+- Multi-tenant user roles (Admin, Client, End User)  
+- PostgreSQL database connection  
+- Event logging (console and file)  
+- Continuous Integration with GitHub Actions  
+- Pre-commit hooks, linting and formatting with Ruff 
 
 ## Installation
 
@@ -66,10 +66,16 @@ Wat staat er in de .env-file?
 
 SECRET_KEY=your-secret-key  
 DEBUG=True  
-ALLOWED_HOSTS=127.0.0.1,localhost  
+ALLOWED_HOSTS=localhost,127.0.0.1  
 
 POSTGRES_DB= saas_analytics
 POSTGRES_USER= postgres
 POSTGRES_PASSWORD=your-password
 POSTGRES_HOST=localhost
 POSTGRES_PORT=5432
+
+## Planned Features
+- Event model with JSON metadata
+- API endpoints for event tracking
+- Swagger / OpenAPI documentation
+- Basic dashboard for clients
