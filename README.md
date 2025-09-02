@@ -59,7 +59,7 @@ CREATE DATABASE saas_analytics;
 3. Check that PostgreSQL is running on the default port 5432 (or change it in your .env file).  
 
 ## Configuration
-Create a .env-file in the root of the project.  
+Create a .env file in the project root with the following content:  
 
 **Example:**  
 
