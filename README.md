@@ -1,6 +1,8 @@
 # SaaS Analytics Dashboard
 
+
 ## Description
+
 
 ## Features
 
@@ -13,11 +15,33 @@
 
 ## Installation
 
-1. **Clone the repository**
+1. **Clone the repository:**
 ```
 git clone https://github.com/Jeffreybekker/saas-analytics-dashboard.git
 ```
-2. **Create a .env-file in the root of the project**  
-More information about this at [Configuration](#configuration).
+
+2. **Install pipenv:**
+```
+pip install --user pipenv
+```
+
+3. **Install dependencies:**
+```
+pipenv install --dev
+```
+
+4. **Activate the environment:**
+```
+pipenv shell
+```
+
+5. **Run migrations and start the server:**
+```
+python manage.py migrate
+```
+```
+python manage.py runserver
+```
 
 ## Configuration
+**Create a .env-file in the root of the project**  
