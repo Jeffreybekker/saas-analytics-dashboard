@@ -49,4 +49,19 @@ python manage.py runserver
 - No need anymore for requirements.txt
 
 ## Configuration
-**Create a .env-file in the root of the project**  
+Create a .env-file in the root of the project.  
+
+**Example:**  
+Wat staat er in de .env-file?
+
+**SECRET_KEY**
+**DEBUG**
+**ALLOWED_HOSTS**
+
+**DB_NAME**
+**DB_USER**
+**DB_PASSWORD**
+**DB_HOST**
+**DB_PORT**
+
+
