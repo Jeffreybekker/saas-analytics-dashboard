@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "core",
     "events",
+    "userauths",
 ]
 
 MIDDLEWARE = [
@@ -122,6 +123,8 @@ TIME_ZONE = "UTC"
 USE_I18N = True
 
 USE_TZ = True
+
+AUTH_USER_MODEL = "userauths.User"
 
 
 # Static files (CSS, JavaScript, Images)
