@@ -1,4 +1,4 @@
-# 0003: JWT Authentication with Bearer Tokens
+# 0002: JWT Authentication with Bearer Tokens
 
 ## Context
 We need a way for users (admin, client, end user) to log in and use the API safely.  
